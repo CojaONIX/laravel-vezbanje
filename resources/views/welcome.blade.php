@@ -11,9 +11,10 @@
     <title>Vezbanje</title>
 </head>
 <body>
-    
+
     <div class="container">
         <h2>Sve ocene</h2>
+        <a href="/dodaj-ocenu" class="btn btn-primary">Dodaj ocenu</a>
         <hr>
 
         <table class="table">
@@ -24,6 +25,7 @@
                 <th>ocena</th>
                 <th>created_at</th>
                 <th>updated_at</th>
+                <th>Action</th>
             </tr>
 
             @foreach ($ocene as $ocena)
@@ -34,6 +36,13 @@
                 <td>{{ $ocena->ocena }}</td>
                 <td>{{ $ocena->created_at }}</td>
                 <td>{{ $ocena->updated_at }}</td>
+                <td>
+                    <form method="post" action="/delete-user-grade/{{$ocena->id}}">
+                        @csrf
+                        @method('delete')
+                        <button class="btn btn-outline-danger" type="submit">Delete</button>
+                    </form>
+                </td>
             </tr>
             @endforeach
         </table>

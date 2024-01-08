@@ -14,3 +14,4 @@
 - // .env DB settings
 - php artisan migrate
 - php artisan make:model Ocene -m
+- php artisan make:controller OceneController
