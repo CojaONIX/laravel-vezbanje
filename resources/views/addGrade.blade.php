@@ -35,7 +35,7 @@
                     @enderror
                 </div>
 
-                <div class="form col-3">
+                <div class="form col-4">
                     <label for="ocena">Ocena:</label>
                     <input type="number" class="form-control" id="ocena" name="ocena" value="{{ old('ocena') }}">
                     @error('ocena')

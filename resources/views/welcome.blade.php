@@ -25,6 +25,7 @@
                 <th>ocena</th>
                 <th>created_at</th>
                 <th>updated_at</th>
+                <th>user_id</th>
                 <th>Action</th>
             </tr>
 
@@ -36,6 +37,7 @@
                 <td>{{ $ocena->ocena }}</td>
                 <td>{{ $ocena->created_at }}</td>
                 <td>{{ $ocena->updated_at }}</td>
+                <td>{{ $ocena->user_id }}</td>
                 <td>
                     <form method="post" action="/delete-user-grade/{{$ocena->id}}">
                         @csrf

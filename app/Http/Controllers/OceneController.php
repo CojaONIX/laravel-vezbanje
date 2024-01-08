@@ -10,8 +10,8 @@ class OceneController extends Controller
     public function addGrade(Request $request)
     {
         $request->validate([
-            'predmet' => 'required|string|max:64',
-            'profesor' => 'required|string|max:64',
+            'predmet' => 'required|string|min:2|max:64',
+            'profesor' => 'required|string|min:2|max:64',
             'ocena' => 'required|int|min:1|max:5'
         ]);
 

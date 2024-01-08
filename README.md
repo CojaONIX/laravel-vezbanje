@@ -15,3 +15,4 @@
 - php artisan migrate
 - php artisan make:model Ocene -m
 - php artisan make:controller OceneController
+- php artisan make:migration add_user_id_to_ocene
