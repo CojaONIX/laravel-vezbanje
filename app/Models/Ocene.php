@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ocene extends Model
 {
-    use HasFactory;
+    protected $table = 'ocene';
+
+    protected $fillable = [
+        'predmet',
+        'ocena',
+        'profesor'
+    ];
 }
