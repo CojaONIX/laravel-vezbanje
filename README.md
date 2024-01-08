@@ -13,3 +13,4 @@
 - php artisan serve
 - // .env DB settings
 - php artisan migrate
+- php artisan make:model Ocene -m
